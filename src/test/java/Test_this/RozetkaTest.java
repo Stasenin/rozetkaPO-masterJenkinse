@@ -2,10 +2,13 @@ package Test_this;
 
 import Test_this.Test_this.MainPage;
 import Test_this.Test_this.RegistrattionPage;
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.io.IOException;
+
+import static Test_this.DriverWrapper.getDriver;
 
 public class RozetkaTest {
     MainPage mainPage;
@@ -34,10 +37,10 @@ public class RozetkaTest {
         System.out.println("Passed: Right Error massage and bg input color.");
 
     }
-//
-//   @After
-//   public void poscondition(){
-//       getDriver().quit();
-//   }
+
+   @After
+   public void poscondition() throws IOException {
+       getDriver().quit();
+   }
 
 }
