@@ -1,4 +1,4 @@
-package Test_this;
+package Test_this.Test_this;
 
 import org.openqa.selenium.By;
 
@@ -12,7 +12,7 @@ public class MainPage {
 
 
 //    public MainPage(WebDriver driver) {
-//        this.driver = driver;
+//        this.driver = river;
 //    }
 
     public void open() throws IOException {

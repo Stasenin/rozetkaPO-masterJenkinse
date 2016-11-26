@@ -1,4 +1,4 @@
-package Test_this;
+package Test_this.Test_this;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -11,7 +11,7 @@ import static Test_this.DriverWrapper.getDriver;
 
 public class RegistrattionPage {
 //    private WebDriver driver;
-    private final By Email = By.xpath("input[name='email']");
+//    private final By Email = By.xpath("input[name='email']");
 
 
 //    public RegistrattionPage(WebDriver driver){
