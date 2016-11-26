@@ -23,10 +23,12 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="rozetkaPO-master" />
+        <module name="rozetkaPO-masterJenkins" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="rozetkaPO-master" target="1.6" />
+      <module name="rozetkaPO-masterJenkins" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>
