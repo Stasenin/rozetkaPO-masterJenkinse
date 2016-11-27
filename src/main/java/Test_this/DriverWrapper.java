@@ -14,7 +14,7 @@ public class DriverWrapper {
 
     private static WebDriver driver;
 
-    public static  WebDriver getDriver() throws IOException {
+    public static WebDriver getDriver() throws IOException {
 
 // to run this public public:
 // 1. All classes and methods who call this method(getDriver()) need to have "throws IOException".
@@ -29,9 +29,9 @@ public class DriverWrapper {
             properties.load(input);
             properties.getProperty("driverWEBs");
             String x = properties.getProperty("driverWEBs");
-            System.out.println(x+" = String x");
+            System.out.println(x + " = String x");
             String y = "ChromeDriver";
-            String z =  "FirefoxDriver";
+            String z = "FirefoxDriver";
 
             if (driver == null) {
                 if (x.equals(y)) {
@@ -43,19 +43,15 @@ public class DriverWrapper {
                     System.setProperty("webdriver.gecko.driver", "src\\test\\resources\\geckodriver.exe");
                     driver = new FirefoxDriver();
                     System.out.println("Starting FirefoxDriver ");
+                } else {
+                    System.out.println("None of the drivers was initialized");
                 }
-             else {
-                System.out.println("None of the drivers was initialized");
             }
+        } catch (Exception e){
+            System.out.println(e.getMessage());
         }
-            } finally {
-            if (driver == null) {
-                System.out.println(driver);
-            }
-
-            System.out.println("Debug shity code");
-            }
-        return driver;  }
-        }
+        return driver;
+    }
+}
 
 
