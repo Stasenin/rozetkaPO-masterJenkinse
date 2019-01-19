@@ -21,7 +21,7 @@ public class RozetkaTest {
         /*System.setProperty("webdriver.chrome.driver","src\\test\\resources\\chromedriver.exe");
         driver = new ChromeDriver();*///        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         mainPage = new MainPage();
-        registrationPage = new RegistrattionPage(); // обявленную переменную инстанциируем. вызываем конструктор. а конструктор возвращает элемент данного класса.
+        registrationPage = new RegistrattionPage(); 
 
     }
 
